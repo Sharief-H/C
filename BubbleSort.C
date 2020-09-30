@@ -11,9 +11,9 @@ int main()
 	    printf("\nENTER ELEMENT FOR %d POSITION : ",i+1);
 		scanf("%d",&a[i]);
     }
-	for(i=0;i<n;i++)
+	for(i=0;i<n-1;i++)   //for less work for loop
 	{
-			for(j=0;j<n;j++)
+			for(j=0;j<n-i-1;j++)
 			{
 				if(a[j]>a[j+1])
 				{
